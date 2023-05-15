@@ -17,12 +17,12 @@
   <body>
     <header>
       <a href="index.html"
-        ><img
-          src="./image/pokeball.png"
-          alt="pokebola"
-          class="logo"
-          title="Adicionar pokemon"
+        ><img src="./image/pokeball.png" alt="pokebola" class="logo"
       /></a>
+      <button type="button" id="modal-add-pokemon" class="add-btn">
+        <h4>Adicionar Pokemon</h4>
+      </button>
+
       <button type="button" id="botao-alterar-tema">
         <img
           src="./image/sun.png"
@@ -32,6 +32,23 @@
         />
       </button>
     </header>
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+      <div id="modal-header">
+        <h2>Adicione as informações do novo pokemon</h2>
+        <button id="close-modal">Fechar</button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sed
+          inventore itaque!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga,
+          quaerat?
+        </p>
+      </div>
+    </div>
     <main>
       <ul class="listagem-pokemon">
         <li class="cartao-pokemon modo-claro">
