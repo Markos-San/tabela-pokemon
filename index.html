@@ -39,18 +39,85 @@
         <button id="close-modal">Fechar</button>
       </div>
       <div class="modal-body">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sed
-          inventore itaque!
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga,
-          quaerat?
-        </p>
+        <form id="form-add-pokemon" class="form-add-pokemon">
+          <label for="nome-do-pokemon">Qual o nome do pokemon?</label>
+          <input type="text" id="nomePokemon" />
+          <br />
+          <label for="gif-pokemon">Insira o gif do pokemon</label>
+          <input type="file" />
+          <br />
+          <label for="atributo-pokemon"
+            >Qual o atributo primario do pokemon?</label
+          >
+          <select
+            name="atributo-pokemon"
+            id="atributo-pokemon"
+            class="atributo-pokemon"
+          >
+            <option value="grama">Grama</option>
+            <option value="agua">Agua</option>
+            <option value="fogo">Fogo</option>
+            <option value="terra">Terra</option>
+            <option value="pedra">Pedra</option>
+            <option value="aço">Aço</option>
+            <option value="gelo">Gelo</option>
+            <option value="eletrico">Eletrico</option>
+            <option value="dragao">Dragão</option>
+            <option value="fantasma">Fantasma</option>
+            <option value="psiquico">Psiquico</option>
+            <option value="normal">Normal</option>
+            <option value="lutador">Lutador</option>
+            <option value="venenoso">Venenoso</option>
+            <option value="inseto">Inseto</option>
+            <option value="voador">Voador</option>
+            <option value="escuridao">Escuridão</option>
+            <option value="fada">Fada</option>
+          </select>
+          <br />
+
+          <label for="atributo2-pokemon"
+            >Qual o atributo segundario do pokemon?</label
+          >
+          <select
+            name="atributo2-pokemon"
+            id="atributo2-pokemon"
+            class="atributo2-pokemon"
+          >
+            <option value="grama">Grama</option>
+            <option value="agua">Agua</option>
+            <option value="fogo">Fogo</option>
+            <option value="terra">Terra</option>
+            <option value="pedra">Pedra</option>
+            <option value="aço">Aço</option>
+            <option value="gelo">Gelo</option>
+            <option value="eletrico">Eletrico</option>
+            <option value="dragao">Dragão</option>
+            <option value="fantasma">Fantasma</option>
+            <option value="psiquico">Psiquico</option>
+            <option value="normal">Normal</option>
+            <option value="lutador">Lutador</option>
+            <option value="venenoso">Venenoso</option>
+            <option value="inseto">Inseto</option>
+            <option value="voador">Voador</option>
+            <option value="escuridao">Escuridão</option>
+            <option value="fada">Fada</option>
+          </select>
+          <br />
+          <label for="descricao-pokemon">Fale um pouco sobre o pokemon</label>
+          <textarea
+            name="descricao-pokemon"
+            id="texto-descricao-pokemon"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <button type="button" class="submit-btn" id="submit-btn">
+            Enviar
+          </button>
+        </form>
       </div>
     </div>
     <main>
-      <ul class="listagem-pokemon">
+      <ul class="listagem-pokemon" id="listagem-pokemon">
         <li class="cartao-pokemon modo-claro">
           <div class="informacoes">
             <span>bulbasaur</span>
