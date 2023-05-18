@@ -44,7 +44,7 @@
           <input type="text" id="nomePokemon" />
           <br />
           <label for="gif-pokemon">Insira o gif do pokemon</label>
-          <input type="file" />
+          <input type="file" id="gifPokemon" />
           <br />
           <label for="atributo-pokemon"
             >Qual o atributo primario do pokemon?</label
@@ -54,6 +54,7 @@
             id="atributo-pokemon"
             class="atributo-pokemon"
           >
+            <option selected disabled>Selecione uma opção...</option>
             <option value="grama">Grama</option>
             <option value="agua">Agua</option>
             <option value="fogo">Fogo</option>
@@ -83,6 +84,8 @@
             id="atributo2-pokemon"
             class="atributo2-pokemon"
           >
+            <option selected disabled>Selecione uma opção...</option>
+            <option value="none">Sem Atributo</option>
             <option value="grama">Grama</option>
             <option value="agua">Agua</option>
             <option value="fogo">Fogo</option>
@@ -96,7 +99,7 @@
             <option value="psiquico">Psiquico</option>
             <option value="normal">Normal</option>
             <option value="lutador">Lutador</option>
-            <option value="venenoso">Venenoso</option>
+            <option value="veneno">Veneno</option>
             <option value="inseto">Inseto</option>
             <option value="voador">Voador</option>
             <option value="escuridao">Escuridão</option>
@@ -110,7 +113,7 @@
             cols="30"
             rows="10"
           ></textarea>
-          <button type="button" class="submit-btn" id="submit-btn">
+          <button type="submit" class="submit-btn" id="submit-btn">
             Enviar
           </button>
         </form>
