@@ -63,10 +63,10 @@ const addCardPokemon = (
   const newImg = document.createElement("img");
   newImg.className = "gif";
   newImg.alt = "foto do pokemon";
-  const gif = inputGifPokemon.value;
-  const gifreplaced = gif.replace("C:\\fakepath\\", ".\\image\\");
+  const gif = inputGifPokemon.files[0].name;
+  //const gifreplaced = gif.replace("C:\\fakepath\\", "");
 
-  newImg.src = `${gifreplaced}`;
+  newImg.src = `\\./image\\${gif}`;
 
   const newUl = document.createElement("ul");
   newUl.className = "tipos";
@@ -89,4 +89,5 @@ const addCardPokemon = (
 
   newLi.append(newDiv, newImg, newUl, newP);
   ul.appendChild(newLi);
+  console.log(gif);
 };
