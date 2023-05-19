@@ -64,9 +64,8 @@ const addCardPokemon = (
   newImg.className = "gif";
   newImg.alt = "foto do pokemon";
   const gif = inputGifPokemon.files[0].name;
-  //const gifreplaced = gif.replace("C:\\fakepath\\", "");
 
-  newImg.src = `\\./image\\${gif}`;
+  newImg.src = `.\\image\\${gif}`;
 
   const newUl = document.createElement("ul");
   newUl.className = "tipos";
