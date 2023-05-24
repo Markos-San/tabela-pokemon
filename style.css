@@ -12,11 +12,11 @@
 }
 
 #close-modal {
-  padding: 0.6rem 1.2rem;
-  background-color: #888;
+  padding: 0.5rem 0.9rem;
+  background-color: #555454;
   color: #fff;
   border: none;
-  border-radius: 0.25rem;
+  border-radius: 1rem;
   cursor: pointer;
   opacity: 0.7;
   font-size: 1rem;
@@ -38,25 +38,32 @@
 }
 
 #modal {
+  background-image: url("./image/template.modal.png");
+  background-color: #888;
+  display: flex;
+  flex-direction: column;
   position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
   z-index: 10;
-  width: 500px;
+  height: 580px;
+  width: 400px;
   max-width: 90%;
-  padding: 1.2rem;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 8px;
   border-radius: 0.5rem;
 }
 
 #modal-header {
+  padding-left: 75px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
+  font-size: 23px;
 }
 .modal-body p {
   margin-bottom: 1rem;
@@ -71,6 +78,36 @@
 #modal.hide {
   top: 0;
 }
+
+.form-add-pokemon {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.descricao-pokemon {
+  background-color: transparent;
+}
+
+.send-btn {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 80px;
+  padding-top: 20px;
+}
+
+.submit-btn {
+  font-size: 25px;
+  background-color: transparent;
+  border: none;
+  font-style: oblique;
+  transition: 0.5s;
+  color: #414040;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  color: #549b2c;
+}
+
 ul {
   list-style: none;
 }
@@ -207,6 +244,25 @@ main .descricao {
   background-color: #a6b91a;
 }
 
+.terra {
+  background-color: #754403;
+}
+
+.pedra {
+  background-color: #4e4b4b;
+}
+
+.aco {
+  background-color: #adadad;
+}
+
+.gelo {
+  background-color: #cbd7f5;
+}
+
+.eletrico {
+  background-color: #fff200;
+}
 /* ===== Scrollbar CSS ===== */
 
 *::-webkit-scrollbar {

@@ -35,8 +35,8 @@
     <div id="fade" class="hide"></div>
     <div id="modal" class="hide">
       <div id="modal-header">
-        <h2>Adicione as informações do novo pokemon</h2>
-        <button id="close-modal">Fechar</button>
+        <h5>NOVO POKEMON</h5>
+        <button id="close-modal">X</button>
       </div>
       <div class="modal-body">
         <form id="form-add-pokemon" class="form-add-pokemon">
@@ -55,24 +55,24 @@
             class="atributo-pokemon"
           >
             <option selected disabled>Selecione uma opção...</option>
-            <option value="grama">Grama</option>
-            <option value="agua">Agua</option>
-            <option value="fogo">Fogo</option>
-            <option value="terra">Terra</option>
-            <option value="pedra">Pedra</option>
-            <option value="aço">Aço</option>
-            <option value="gelo">Gelo</option>
-            <option value="eletrico">Eletrico</option>
-            <option value="dragao">Dragão</option>
-            <option value="fantasma">Fantasma</option>
-            <option value="psiquico">Psiquico</option>
-            <option value="normal">Normal</option>
-            <option value="lutador">Lutador</option>
-            <option value="venenoso">Venenoso</option>
-            <option value="inseto">Inseto</option>
-            <option value="voador">Voador</option>
-            <option value="escuridao">Escuridão</option>
-            <option value="fada">Fada</option>
+            <option class="grama" value="grama">Grama</option>
+            <option class="agua" value="agua">Água</option>
+            <option class="fogo" value="fogo">Fogo</option>
+            <option class="terra" value="terra">Terra</option>
+            <option class="pedra" value="pedra">Pedra</option>
+            <option class="aço" value="aço">Aço</option>
+            <option class="gelo" value="gelo">Gelo</option>
+            <option class="eletrico" value="eletrico">Elétrico</option>
+            <option class="dragao" value="dragao">Dragão</option>
+            <option class="fantasma" value="fantasma">Fantasma</option>
+            <option class="psiquico" value="psiquico">Psiquico</option>
+            <option class="normal" value="normal">Normal</option>
+            <option class="lutador" value="lutador">Lutador</option>
+            <option class="venenoso" value="venenoso">Venenoso</option>
+            <option class="inseto" value="inseto">Inseto</option>
+            <option class="voador" value="voador">Voador</option>
+            <option class="escuridao" value="escuridao">Escuridão</option>
+            <option class="fada" value="fada">Fada</option>
           </select>
           <br />
 
@@ -86,36 +86,43 @@
           >
             <option selected disabled>Selecione uma opção...</option>
             <option value="none">Sem Atributo</option>
-            <option value="grama">Grama</option>
-            <option value="agua">Agua</option>
-            <option value="fogo">Fogo</option>
-            <option value="terra">Terra</option>
-            <option value="pedra">Pedra</option>
-            <option value="aço">Aço</option>
-            <option value="gelo">Gelo</option>
-            <option value="eletrico">Eletrico</option>
-            <option value="dragao">Dragão</option>
-            <option value="fantasma">Fantasma</option>
-            <option value="psiquico">Psiquico</option>
-            <option value="normal">Normal</option>
-            <option value="lutador">Lutador</option>
-            <option value="veneno">Veneno</option>
-            <option value="inseto">Inseto</option>
-            <option value="voador">Voador</option>
-            <option value="escuridao">Escuridão</option>
-            <option value="fada">Fada</option>
+            <option class="grama" value="grama">Grama</option>
+            <option class="agua" value="agua">Água</option>
+            <option class="fogo" value="fogo">Fogo</option>
+            <option class="terra" value="terra">Terra</option>
+            <option class="pedra" value="pedra">Pedra</option>
+            <option class="aco" value="aço">Aço</option>
+            <option class="gelo" value="gelo">Gelo</option>
+            <option class="eletrico" value="eletrico">Elétrico</option>
+            <option class="dragao" value="dragao">Dragão</option>
+            <option class="fantasma" value="fantasma">Fantasma</option>
+            <option class="psiquico" value="psiquico">Psiquico</option>
+            <option class="normal" value="normal">Normal</option>
+            <option class="lutador" value="lutador">Lutador</option>
+            <option class="veneno" value="veneno">Veneno</option>
+            <option class="inseto" value="inseto">Inseto</option>
+            <option class="voador" value="voador">Voador</option>
+            <option class="escuridao" value="escuridao">Escuridão</option>
+            <option class="fada" value="fada">Fada</option>
           </select>
           <br />
-          <label for="descricao-pokemon">Fale um pouco sobre o pokemon</label>
+          <br />
+          <br />
+          <label for="descricao-pokemon" class="descricao-pokemon-label"
+            >Fale um pouco sobre o pokemon</label
+          >
           <textarea
             name="descricao-pokemon"
+            class="descricao-pokemon"
             id="texto-descricao-pokemon"
-            cols="30"
+            cols="40"
             rows="10"
           ></textarea>
-          <button type="submit" class="submit-btn" id="submit-btn">
-            Enviar
-          </button>
+          <div class="send-btn">
+            <button type="submit" class="submit-btn" id="submit-btn">
+              Enviar
+            </button>
+          </div>
         </form>
       </div>
     </div>

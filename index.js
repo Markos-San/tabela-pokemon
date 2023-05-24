@@ -53,6 +53,7 @@ const addCardPokemon = (
     (inputNamePokemon.value !== "" || null) &&
     inputAtribute.value &&
     inputAtribute2.value !== "Selecione uma opção..." &&
+    inputAtribute.value !== inputAtribute2.value &&
     textPokemon.value !== "" &&
     inputGifPokemon.value !== ""
   ) {
@@ -80,13 +81,17 @@ const addCardPokemon = (
 
     const tipoLi = document.createElement("li");
     tipoLi.className = `tipo ${inputAtribute.value}`;
-    tipoLi.innerText = `${inputAtribute.value} `;
+    tipoLi.innerText = `${
+      inputAtribute.options[inputAtribute.selectedIndex].text
+    } `;
     newUl.append(tipoLi);
 
     if (inputAtribute2.value !== "none") {
       const tipoLi2 = document.createElement("li");
       tipoLi2.className = `tipo ${inputAtribute2.value}`;
-      tipoLi2.innerText = `${inputAtribute2.value} `;
+      tipoLi2.innerText = `${
+        inputAtribute2.options[inputAtribute2.selectedIndex].text
+      } `;
       newUl.append(tipoLi2);
     }
 
@@ -103,6 +108,7 @@ const addCardPokemon = (
     textPokemon.value = "";
     inputGifPokemon.value = "";
   } else {
-    alert("Faltando informações");
+    alert("Faltando informações ou Atributos iguais.");
+    console.log();
   }
 };
